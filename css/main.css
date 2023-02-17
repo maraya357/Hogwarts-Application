@@ -1,0 +1,98 @@
+body {
+    cursor: url("../images/cursor.png"), auto;
+    margin-left: 10vh;
+    margin-right: 10vh;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    background-image: url("../images/background.png");
+    background-color: #cccccc;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+}
+
+@font-face {
+    font-family: wizardFont;
+    src: url("../fonts/WizardFont.ttf");
+}
+
+.wFont {
+    font-family: wizardFont;
+}
+
+
+.mt30 {
+    margin-top: 30px;
+}
+
+.logo {
+    width: 150px;
+    height: 150px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.myShadow {
+    text-shadow: 2px 2px #000000;
+}
+
+.myForm {
+    max-width: 40vh;
+    margin: 0 auto;
+}
+
+.textColor {
+    color: #d2a500;
+}
+
+.btn {
+    width: fit-content;
+    background-color: #d2a500;
+    -webkit-border-radius: 60px;
+    border-radius: 60px;
+    border: none;
+    display: inline-block;
+    font-size: 20px;
+    padding: 5px 15px;
+    text-align: center;
+    text-decoration: none;
+}
+
+@keyframes glowing {
+    0% {
+        background-color: #d2a500;
+        box-shadow: 0 0 10px #d2a500;
+    }
+
+    50% {
+        background-color: #d2a500;
+        box-shadow: 0 0 40px #d2a500;
+    }
+
+    100% {
+        background-color: #d2a500;
+        box-shadow: 0 0 10px #d2a500;
+    }
+}
+
+.btn:hover {
+    animation: glowing 1300ms infinite;
+    cursor: url("../images/cursor.png"), auto;
+}
+
+.centerCenter {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+
+/* cursor wand */
+
+.cursorBody {
+    cursor: url("../images/cursor.png"), auto;
+}
